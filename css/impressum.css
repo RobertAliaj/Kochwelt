@@ -1,0 +1,40 @@
+ .impressum a {
+     text-decoration: none;
+     color: black;
+     font-weight: 500;
+ }
+
+
+ .impressum a:hover {
+     text-decoration: underline;
+ }
+
+ .impressum {
+     padding-left: 150px;
+     padding-right: 150px;
+     height: calc(100vh - 239px);
+
+ }
+
+
+ @media (max-width:850px) {
+     .impressum {
+         padding-left: 25px;
+         padding-right: 5px;
+         height: calc(100vh - 239px);
+     }
+ }
+
+ @media (max-width:850px) {
+    .impressum {
+        height: calc(100vh - 219px);
+    }
+}
+
+ @media (max-width:380px) {
+    .impressum {
+        padding-left: 25px;
+        padding-right: 5px;
+        height: calc(100vh - 140px);
+    }
+}

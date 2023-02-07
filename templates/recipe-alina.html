@@ -1,0 +1,56 @@
+<div onclick="closeDropdown()">
+
+    <div class="main-div">
+        <h1>Kürbissuppe</h1>
+        <img src="../img/Pumpkin.jpg" class="main-pic">
+        <div class="small-icons-parent">
+            <div class="small-icons-child">
+                <img src="../img/clock-regular.svg">
+                <span>35 Min.</span>
+            </div>
+            <div class="small-icons-child">
+                <img src="../img/brain-solid.svg">
+                <span>einfach</span>
+            </div>
+            <div class="small-icons-child">
+                <img src="../img/calendar-alt-regular.svg">
+                <span>28.10.2022</span>
+            </div>
+        </div>
+        <hr>
+        <div class="inputDiv">
+            <span>Zutaten für</span>
+            <input onkeyup="resetInput()" type="number" id="myInput" placeholder="Mind. 4 Portion" value="6" min="4">
+            <button onclick="calculate()">Portionen</button>
+        </div>
+
+        <table>
+            <tbody id="table"></tbody>
+        </table>
+
+        <h2>Zubereitung</h2>
+        <div class="small-icons-parent">
+            <div class="small-icons-child d-none">
+                <img src="../img/clock-regular.svg" class="bottom-img">
+                <span>ca. 15 Minuten</span>
+            </div>
+            <div class="small-icons-child small-icons-child-extra">
+                <img src="../img/clock-regular.svg" class="bottom-img">
+                <span>Gesamtzeit ca. 15 Minuten</span>
+            </div>
+        </div>
+        <ul>
+            <li>Kürbis, Möhren, Ingwer und Zwiebel schälen und klein schneiden.</li> <br>
+            <li>Schön in der Butter andünsten.</li> <br>
+            <li>Anschließend mit der Brühe aufgießen und weich kochen (Ca 15-20min).</li> <br>
+            <li>Dann sehr fein pürieren, eventuell durch ein Sieb streichen.</li> <br>
+            <li>Die Kokosmilch unterrühren, mit Salz, Pfeffer abschmecken.</li> <br>
+            <li>Mit Korianderblättchen garniert servieren. Und Fertig!</li> <br>
+        </ul>
+        <h3>Rezept erstellt von: </h3>
+        <div class="author">
+            <img src="../img/AW.jpg" class="bottom-img"> <b> Alina Wetter</b>
+        </div>
+    </div>
+
+</div>

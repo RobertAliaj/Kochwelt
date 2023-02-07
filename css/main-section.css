@@ -1,0 +1,230 @@
+body {
+    margin: 0;
+}
+
+html {
+    font-family: 'raleway', sans-serif;
+}
+
+button {
+    padding: 10px 40px 10px 40px;
+    color: white;
+    background-color: green;
+    border: none;
+}
+
+button:hover {
+    background-color: rgb(0, 146, 0);
+    cursor: pointer;
+}
+
+.main-recipe-container {
+    display: flex;
+    margin: 50px 150px 50px 150px;
+    gap: 40px;
+}
+
+.main-recipe-container img {
+    width: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.main-recipe-container h2 {
+    margin-top: 0;
+    justify-content: flex-start;
+}
+
+.main-recipe-container p {
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.something-new {
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    flex-direction: column;
+}
+
+.something-new h2 {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.new-recipes {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: center;
+    gap: 20px;
+}
+
+.new-recipes img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.2s all ease-in-out;
+}
+
+.new-recipes img:hover {
+    transform: scale(1.05);
+}
+
+.new-recipes p {
+    margin-top: 5px;
+    margin-bottom: 80px;
+}
+
+.cooking-tips-parent {
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.cooking-tips-parent h2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cooking-tips-child {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.cooking-tips-child img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.cooking-tips-child p {
+    margin: 0;
+    text-align: justify;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 755px) {
+    .main-recipe-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 0;
+    }
+
+    button{
+        height: 40px;
+        width: 200px;
+        font-size: 16px;
+    }
+
+    .main-recipe-container img {
+        margin-right: 0;
+    }
+
+    .main-recipe-container h2 {
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    .new-recipes {
+        flex-direction: column;
+        margin: 0;
+        gap: 0;
+    }
+
+    .new-recipes img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .new-recipes p {
+        margin-bottom: 30px;
+    }
+
+    .cooking-tips-parent {
+        margin: 0 80px 50px 80px;
+    }
+
+    .cooking-tips-parent h2 {
+        text-align: center;
+    }
+
+    .cooking-tips-child {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .cooking-tips-child img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .cooking-tips-child p {
+        text-align: justify;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-recipe-container {
+        margin: 50px;
+    }
+
+    button{
+        height: 40px;
+        width: 200px;
+        font-size: 16px;
+    }
+
+
+    .new-recipes {
+        flex-direction: column;
+    }
+
+    .cooking-tips-child {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+}
+
+@media(max-width: 450px) {
+    .cooking-tips-parent {
+        margin: 0 50px 50px 50px;
+    }
+}
+
+@media (max-width: 350px) {
+    .main-recipe-container img {
+        width: 250px;
+    }
+
+    .new-recipes img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .something-new h2 {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .cooking-tips-parent h2 {
+        text-align: center;
+    }
+
+    .cooking-tips-child img {
+        width: 150px;
+        height: 150px;
+    }
+}
